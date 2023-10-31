@@ -1,0 +1,156 @@
+.team-testimonial {
+  background-color: #EDCF87;
+  padding-bottom: 120px;
+}
+@media (min-width: 1400px) {
+  .team-testimonial .meet-our-team {
+    padding: 100px 300px;
+  }
+}
+.team-testimonial .meet-our-team .section-title {
+  display: block;
+}
+@media (min-width: 756px) {
+  .team-testimonial .meet-our-team .section-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.team-testimonial .meet-our-team .section-title p {
+  font-weight: 500;
+  size: 18px;
+}
+.team-testimonial .meet-our-team .section-title h3 {
+  font-size: 45px;
+  font-weight: 700;
+}
+.team-testimonial .meet-our-team .section-title .btn-yellow {
+  display: inline;
+  height: 10%;
+  font-size: 16px;
+  border: 1px solid #191919;
+  justify-self: center;
+  text-align: center;
+}
+@media (min-width: 1400px) {
+  .team-testimonial .meet-our-team .section-title .btn-yellow {
+    display: flex;
+    height: 50px;
+    justify-self: center;
+    align-self: end;
+    text-align: center;
+  }
+}
+.team-testimonial .meet-our-team .section-title .btn-yellow i {
+  padding-top: 5px;
+  padding-left: 10px;
+}
+.team-testimonial .meet-our-team .team-profiles {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+@media (min-width: 460px) {
+  .team-testimonial .meet-our-team .team-profiles {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+  }
+}
+.team-testimonial .meet-our-team .team-profiles .team-profile {
+  padding: 0 10px;
+}
+.team-testimonial .meet-our-team .team-profiles .team-profile p {
+  font-weight: 400;
+  color: #545454;
+}
+.team-testimonial .meet-our-team .team-profiles .team-profile h6 {
+  font-size: 22px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 800;
+  padding-top: 28px;
+}
+.team-testimonial .meet-our-team .team-profiles .team-profile img {
+  width: 100%;
+  height: auto;
+}
+.team-testimonial .meet-our-team .dots {
+  padding-top: 10px;
+  text-align: center;
+}
+.team-testimonial .meet-our-team .dots a {
+  color: #bea668;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 70px;
+}
+.team-testimonial .meet-our-team .dots a.active {
+  color: #282525;
+}
+.team-testimonial .testimonial {
+  background-color: rgb(244, 244, 244);
+  text-align: center;
+}
+.team-testimonial .testimonial .section-title {
+  padding-top: 100px;
+  text-align: center;
+}
+.team-testimonial .testimonial .section-title p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.team-testimonial .testimonial .section-title h3 {
+  font-size: 45px;
+  font-weight: 800;
+  font-family: "DM Sans", sans-serif;
+}
+.team-testimonial .testimonial .clients {
+  padding: 10px 10px;
+}
+@media (min-width: 1400px) {
+  .team-testimonial .testimonial .clients {
+    padding: 10px 100px;
+  }
+}
+@media (min-width: 1200px) {
+  .team-testimonial .testimonial .clients .client {
+    padding-left: 80px;
+    display: inline-flex;
+    flex-direction: column;
+    width: 33%;
+  }
+}
+.team-testimonial .testimonial .clients .client p {
+  text-align: start;
+}
+.team-testimonial .testimonial .clients .client .client-intro {
+  display: flex;
+}
+.team-testimonial .testimonial .clients .client .client-intro p {
+  align-self: center;
+  justify-self: center;
+  text-align: start;
+  font-weight: 700;
+}
+.team-testimonial .testimonial .clients .client .client-intro p span {
+  color: #df310e;
+  font-weight: 400;
+}
+.team-testimonial .testimonial .clients .client .client-intro img {
+  display: flex;
+  align-self: start;
+  padding-right: 10px;
+}
+.team-testimonial .testimonial .center-content {
+  padding-top: 40px;
+  padding-bottom: 120px;
+}
+.team-testimonial .testimonial .center-content a {
+  font-weight: 300;
+  font-size: 16px;
+}
+.team-testimonial .testimonial .center-content i {
+  font-size: 12px;
+}

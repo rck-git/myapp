@@ -1,0 +1,311 @@
+
+.features-about-company { 
+    .features-about{
+        padding:0 5px;
+        @media (min-width:1400px) {
+            padding:0 100px;
+        }
+    .features {
+        display: grid;
+        padding: 0px;
+        border: none;
+        @media (min-width:1400px) {
+            border:3px solid #e1dede;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-top: 100px;
+            padding-right: 140px;
+            padding-bottom: 100px;
+        }
+    
+        
+        .features-accounting {
+            display: block;
+            @media (min-width:765px) {
+            display:flex;
+            justify-content: space-evenly;
+            padding-top: 25px;
+            padding-left: 0;
+            }
+            @media (min-width:1400px) {
+                display: block;
+                align-items: center;
+                padding-left: 100px;
+            }
+       
+            p {
+                display: none;
+                
+
+                @media (min-width:1400px) {
+                    display: block;
+                    
+                    size: 18px;
+                    font-weight: 500;
+                    
+                }
+                
+            }
+            h2 {    
+                    font-size: 25px;
+                    padding: 5px;
+                    align-items: start;
+                    @media (min-width:1400px) {
+                        align-items: center;
+                        font-size: 45px;
+                        font-weight: bold;
+                        padding-right: 100px;
+                        padding-bottom: 50px;
+                    }
+                }
+            }
+            a {
+                display: flex;
+                justify-self: end;
+                align-items: end;
+                padding-left: 5px;
+                
+                @media (min-width:1400px) {
+                    display: flex;
+                    justify-content: center;
+                    width: 60%;
+                    color: rgb(14, 14, 14);
+                    padding-left: 50px;
+                }
+                &:hover {
+                    color: white;
+                }
+            } 
+        }
+      
+        .features-advice {
+            display:grid;
+            background-color: #fafaf9(12, 14%, 93%);
+            grid-template-columns: 1fr;
+            padding-right: 0px;
+            padding-top: 0px;
+            gap: 0px;
+           
+            @media (min-width:1400px) {
+                grid-template-columns: 1fr 1fr;
+                padding-top: 50px;
+                justify-items: start;
+                gap: 60px;
+            }
+
+            .advice {  
+                i {           
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                    align-content: start;
+                    justify-content: start;
+                }
+                
+                h4 {
+                    font-weight: bold;
+                    font-size: 22px;
+                    align-self: center;
+                    justify-self: start;
+                    padding-bottom: 10px;
+                }
+                
+                p {
+                    font-size: 16px;
+                    color: #838080;
+                }
+                
+            }
+        }
+    }  
+
+    .about {
+        display: block;
+        gap: 0px;
+        @media (min-width:768px) {
+            display: flex;
+            gap: 0px;
+        }
+        @media (min-width:1400px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 199px;
+        }
+
+        .about-samantha {            
+            display: block;
+            @media (min-width:1400px) {
+                display: flex;
+                position: relative;
+            }
+            .box{
+                display: none;
+
+                @media (min-width:1400px) {
+                display: block;
+                z-index: 1;
+                position: absolute;
+                bottom: 40px;
+                left: 145px; 
+                }             
+
+                .samantha-intro{
+                    display: block;
+                    padding-top: 30px;
+                    padding-left: 30px;
+                    width: 184px;
+                    height: 80px;
+                    background-color: #df310e;
+                    
+                    @media (min-width:1400px){
+                        display: block;
+                        padding-top: 30px;
+                        padding-left: 30px;
+                        width: 368px;
+                        height: 180px;
+                        background-color: #BEEBFF;
+                    }
+                    
+                    p {
+                        color: #191919;
+                    }
+                    .sam {
+                        font-weight: bold;
+                    }
+                    span {
+                        font-weight: bold;
+                        color: #f94d1c;
+                    }
+                }
+            }
+            
+            img {
+                width: 60%;
+                height: auto;
+                @media (min-width:756px) {
+                    padding-left: 0px;
+                    justify-content: center;
+                    height: 350px;
+                    width: 350px;
+                }
+                @media (min-width:1400px) {
+                    padding-left: 200px;
+                    justify-content: end;
+                    height: 100%;
+                    width: 100%;
+                    
+                }
+            }
+            .samantha-intro2 {
+                background-color: #BEEBFF;
+                display: block;
+                width: 50%;
+                border-radius: 25px; 
+                padding: 5px;
+                @media (min-width:756) {
+                    display: block;
+                    padding: 5px;
+                    margin-right: 10px;
+                }
+               @media (min-width:1400px) {
+                display: none;
+               }
+               p{
+                color: #191919;
+               }
+               span {
+                font-weight: bold;
+                color: #f94d1c;
+               }
+               .sam {
+                font-weight: bold;
+               }
+                
+            }
+        }
+        
+        .about-company {
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 15px;
+            padding-right: 0px;
+            @media (min-width:1400px) {
+            display: flex;
+            padding-right: 100px;
+            flex-direction: column;
+            justify-content: space-evenly;
+            }
+
+            h4{
+                font-size: 24px;
+                font-weight: bold;
+                span{
+                    font-size: 14px;
+                    font-weight: 800;
+                    color: #f94d1c;
+                    display: block;
+                    padding-bottom: 30px;
+                }
+                @media (min-width:1400px) {
+                    font-size: 45px;
+                    font-weight: bold;
+                    
+                }
+            }
+            p {
+                padding-bottom: 40px;
+                color: #191919;
+            }
+            
+            .btn-black {
+                display: inline-flex;
+                font-weight: 200;
+                font-size: 16px;
+                width: 35%;
+                text-align: center;          
+                align-self: start;
+                justify-content: center;
+               
+                i {
+                    align-self: center;
+                }
+            }
+            .btn-transparent {
+                position: relative;
+                display: inline-flex;
+                width: 35%;
+                text-align: center;
+                align-self: start;
+                justify-content: center;
+                margin-left: 40px;
+                border: none;
+                &:hover {
+                    i {
+                        border: 1px solid transparent;
+                    }
+                }
+                i {
+                    display: none;
+                    @media (min-width:450px) {
+                    display: inline;
+                    left:-20px;
+                    font-size: 10px;
+                    align-self: center;
+                    justify-self: start;
+                    position:absolute;
+                    
+                    border-radius: 25px;
+                    border: 1px solid black;
+                    padding: 18px;
+                    }
+                    &:hover {
+                        border: 1px solid transparent;
+                    }
+                }
+               
+            }
+       
+        }
+                
+    }
+    
+}

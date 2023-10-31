@@ -1,0 +1,19 @@
+.menu {
+    grid-area:menu;        
+    display:none;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #dad9d3;
+    padding-top:10px;
+    margin-top:10px;
+
+    @media (min-width: 992px) {
+        display:flex;
+    }
+
+    .btn-login{
+        padding-top: 12px;
+        padding-bottom: 12px;
+    } 
+
+}

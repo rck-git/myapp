@@ -1,0 +1,84 @@
+.sign-newsletter {
+  display: block;
+  position: relative;
+  background-color: #F0EFE9;
+  padding: 5px;
+}
+@media (min-width: 1600px) {
+  .sign-newsletter {
+    position: relative;
+    background-color: #F0EFE9;
+    padding: 100px;
+  }
+}
+@media (min-width: 1700px) {
+  .sign-newsletter {
+    padding: 100px 280px;
+  }
+}
+.sign-newsletter .background-lines-right {
+  display: none;
+}
+@media (min-width: 1600px) {
+  .sign-newsletter .background-lines-right {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+  }
+}
+.sign-newsletter .container {
+  display: block;
+}
+@media (min-width: 1400px) {
+  .sign-newsletter .container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.sign-newsletter .container h2 {
+  font-weight: 700;
+  font-size: 25px;
+}
+@media (min-width: 756px) {
+  .sign-newsletter .container h2 {
+    align-self: center;
+    font-weight: 700;
+    font-size: 45px;
+    font-family: "DM Sans", sans-serif;
+  }
+}
+.sign-newsletter .container form input {
+  padding: 5px;
+  margin-bottom: 3px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 16px;
+  border: 1px solid rgba(25, 25, 25, 0.1);
+  margin-right: 20px;
+}
+@media (min-width: 340px) {
+  .sign-newsletter .container form input {
+    padding: 15px 30px;
+  }
+}
+.sign-newsletter .container .btn-yellow {
+  display: inline-block;
+}
+@media (min-width: 340px) {
+  .sign-newsletter .container .btn-yellow {
+    display: block;
+    padding: 15px 30px;
+    width: 50%;
+    margin: 10px;
+  }
+}
+@media (min-width: 756px) {
+  .sign-newsletter .container .btn-yellow {
+    display: inline;
+    width: 100%;
+    padding: 15px 30px;
+  }
+}

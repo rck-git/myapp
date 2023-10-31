@@ -1,0 +1,11 @@
+.contactinformation-bar {
+  grid-area: cib;
+  display: none;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  .contactinformation-bar {
+    display: flex;
+  }
+}

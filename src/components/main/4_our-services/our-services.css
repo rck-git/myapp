@@ -1,0 +1,109 @@
+.our-services {
+  background-color: #f0efe9;
+  position: relative;
+  z-index: 0;
+  padding-bottom: 150px;
+  padding-left: 3px;
+}
+@media (min-width: 1500px) {
+  .our-services .title {
+    padding-left: 200px;
+  }
+}
+.our-services .title .section-title h3 {
+  font-size: 35px;
+}
+@media (min-width: 1500px) {
+  .our-services .title .section-title h3 {
+    font-weight: 700;
+    font-size: 45px;
+  }
+}
+.our-services .flex-box {
+  display: block;
+}
+@media (min-width: 756px) {
+  .our-services .flex-box {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+}
+@media (min-width: 1500px) {
+  .our-services .flex-box {
+    gap: 30px;
+    display: flex;
+  }
+}
+.our-services .flex-box .flex-services {
+  background-color: #ffffff;
+  display: block;
+}
+@media (min-width: 756px) {
+  .our-services .flex-box .flex-services {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 30%;
+    padding-left: 0;
+  }
+}
+@media (min-width: 1400px) {
+  .our-services .flex-box .flex-services {
+    max-width: 308px;
+    height: 333px;
+    padding-left: 30px;
+  }
+}
+.our-services .flex-box .flex-services h6 {
+  display: none;
+}
+@media (min-width: 1400px) {
+  .our-services .flex-box .flex-services h6 {
+    font-size: 30px;
+    display: flex;
+    justify-content: start;
+    padding-bottom: 40px;
+  }
+}
+.our-services .flex-box .flex-services h5 {
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.our-services .flex-box .flex-services p {
+  color: #838080;
+}
+.our-services .flex-box .flex-services .btn-black {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  align-self: end;
+  justify-content: center;
+  margin-right: 10px;
+  border-radius: 25px;
+  padding: 18px;
+}
+.our-services .flex-box .flex-services .btn-black i {
+  align-self: center;
+  justify-self: start;
+  font-size: 20px;
+  font-weight: 300;
+  padding-right: 5px;
+}
+.our-services .flex-box .flex-services:hover {
+  background-color: #f9d783;
+}
+.our-services .center-content {
+  padding-top: 48px;
+}
+.our-services .center-content .btn-transparent {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+.our-services .lines {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+}

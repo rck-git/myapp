@@ -1,0 +1,27 @@
+nav{
+    a {
+    color:#191919;
+    text-decoration: none;
+    margin-right: 35px;
+    font-size: medium;
+    position: relative;
+
+    &.active{
+        font-weight: 500;
+    }
+
+    &.active::after,
+    &:hover::after{
+        content: "";
+        position: absolute;
+        font-weight: 500;
+        height: 2px;
+        width: 15px;
+        background-color: #191919;
+        left:50%;
+        bottom: -3px;                            
+        transform: translate(calc(50% - 15px));
+    }
+
+    }
+}

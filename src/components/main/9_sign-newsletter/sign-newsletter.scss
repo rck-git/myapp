@@ -1,0 +1,75 @@
+.sign-newsletter {
+    display: block;
+    position: relative;
+    background-color: #F0EFE9;
+    padding: 5px;
+    
+    @media (min-width:1600px) {
+        position: relative;
+        background-color: #F0EFE9;
+        padding: 100px;
+    }
+    @media (min-width:1700px) {
+        padding: 100px 280px;
+    }
+
+    .background-lines-right {
+       display: none;
+        @media (min-width:1600px) {
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 50px;
+        }
+    }
+    .container {
+        display: block;
+        @media (min-width:1400px) {
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        align-items: center;     
+        }
+        
+        
+        h2 {
+            font-weight: 700;
+            font-size: 25px;
+            @media (min-width:756px) {
+            align-self: center;
+            font-weight: 700;
+            font-size: 45px;
+            font-family: 'DM Sans', sans-serif;
+            }    
+        }
+        form {
+            input {
+                padding: 5px;
+                margin-bottom: 3px;
+                border-radius: 25px;
+                text-decoration: none;
+                font-size: 16px;
+                border: 1px solid rgb(25, 25, 25, 0.10);
+                margin-right: 20px;
+                @media (min-width:340px) {
+                    padding: 15px 30px;
+                }
+            }
+        }
+        .btn-yellow {
+            display: inline-block;
+            @media (min-width:340px) {
+                display: block;
+                padding: 15px 30px;
+                width: 50%;              
+                margin: 10px;
+            }
+            @media (min-width:756px) {
+            display: inline;
+            width: 100%;
+            padding: 15px 30px;
+            }
+        }
+    }
+   
+}

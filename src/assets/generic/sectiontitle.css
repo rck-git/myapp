@@ -1,0 +1,20 @@
+.section-title {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+  @media (min-width: 768px) {
+    .section-title {
+      padding-top: 120px;
+      padding-bottom: 90px;
+    }
+  }
+  .section-title p {
+    color: #f94d1c;
+    margin-bottom: 10px;
+  }
+  .section-title h2 {
+    color: 191919;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+  }

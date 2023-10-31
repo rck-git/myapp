@@ -1,0 +1,29 @@
+.logos {
+    .brands{
+    display: block;
+    
+    @media (min-width:500px) {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        justify-content: center;             
+        padding: 5px 10px;
+    }
+    @media (min-width:1500px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        padding: 72px 150px;  
+    }      
+        .brand{
+            margin: 6px;
+            border-top: 1px solid transparent;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s;
+            
+            &:hover{
+                box-shadow:0 0 1px 1px #79797a;
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.stars {
+  display: flex;
+  padding-left: 0;
+  font-size: 10px;
+  padding-bottom: 30px;
+  gap: 5px;
+}
+.stars li {
+  display: flex;
+  list-style: none;
+}
