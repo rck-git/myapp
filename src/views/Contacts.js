@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from '../components/footer/Footer'
 import Header from '../components/header/Header';
-import Main from '../components/services/Main'
+import Main from '../components/contact/Main'
 
 
 function Contacts() {

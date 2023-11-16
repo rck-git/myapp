@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from '../../assets/generic/Button'
 import { useState } from 'react'
 
 function LeaveMessage() {
@@ -12,9 +11,10 @@ function LeaveMessage() {
   const [message, setMessage] = useState("")
   const [errorMessage, setErrorMessage] = useState("")
  
+  const [serverResponse, setServerResponse] = useState("")
 
 
-function formValidation(e){
+async function  formValidation(e){
   e.preventDefault(e); 
 
   if (name === "" )  {
@@ -26,7 +26,6 @@ function formValidation(e){
   console.log(name + "was written in name form")
 
   if (!email.includes('@') || !email.includes('.') || email === "")  {
-    
     setErrorEmail("Email field must contain '@' and '.' ")
   }
   else {
@@ -42,8 +41,34 @@ function formValidation(e){
   }
   console.log(message + "was written in message form")
 
-  if (!name == "" && email.includes('@') && email.includes('.') &&  !message === "") {
-  
+  if (name !== "" && email.includes('@') && email.includes('.') && email !== "" && message !== "") {
+    console.log("usermessage start")
+    let userMessage = {name,email,message}
+    const json = JSON.stringify(userMessage)
+    console.log("usermessage stringified =" + json)
+
+    const result = await fetch ('https://win23-assignment.azurewebsites.net/api/contactform', {
+      method: 'post',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body:json
+    })
+
+    switch (result.status) {
+      case 200: alert("Message created successfully!")
+      setServerResponse("Reply from server is: " + result.statusText)
+      console.log(result)
+      break;
+      case 400: alert("Invalid user data / Bad request")
+      setServerResponse("Reply from server is: " + result.statusText)
+      console.log(result)
+      break;
+      default:
+      setServerResponse("Reply from server is: " + result.statusText)
+      console.log(result)
+      break
+    }
   }
 }
 
@@ -52,6 +77,7 @@ function formValidation(e){
     <div className="leave-message">
       <div className="section-title">
         <h1>Leave us a message for any information</h1>
+        <span>{serverResponse}</span>
       </div>
       <div className="user-contact-form">
         <form noValidate>
